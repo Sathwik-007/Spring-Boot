@@ -1,0 +1,11 @@
+package com.miniproj.sample;
+
+interface Vehicle{
+	boolean canDrive();
+}
+
+public interface Car extends Vehicle{
+
+	@Override
+	public boolean canDrive();
+}

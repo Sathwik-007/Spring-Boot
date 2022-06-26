@@ -1,0 +1,15 @@
+package com.miniproj.sample;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+public class Car implements Vehicle{
+	
+	@Autowired
+	Vehicle vehicle;
+
+	@Override
+	public boolean canDrive() {
+		return true;
+	}
+}

@@ -1,0 +1,11 @@
+package com.miniproj.sample;
+
+public abstract class Car implements Vehicle{
+
+	@Override
+	public boolean canDrive() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

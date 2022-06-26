@@ -1,0 +1,5 @@
+package com.miniproj.SpringBootRestAPI.application.controller;
+
+public class StudentRestController {
+
+}

@@ -1,0 +1,14 @@
+package com.sathwik.springboot.application.jpa;
+
+import java.util.List;
+
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+
+public interface UserRepository extends PagingAndSortingRepository<MyUser, Long>{
+	/**
+	 * findBy{Column_Name}
+	 * A free search method syntax offered by spring data provides the implementation for this
+	 * */
+	List<MyUser> findByRole(String role);
+}

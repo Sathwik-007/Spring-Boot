@@ -1,0 +1,10 @@
+package com.miniproj.sample;
+
+public class Car implements Vehicle {
+
+	@Override
+	public boolean canDrive() {
+		return false;
+	}
+
+}

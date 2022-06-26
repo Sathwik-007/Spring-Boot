@@ -1,0 +1,7 @@
+package com.miniproj.sample;
+
+public abstract class Motorcycle extends Vehicle{
+
+	public boolean canFly();
+
+}

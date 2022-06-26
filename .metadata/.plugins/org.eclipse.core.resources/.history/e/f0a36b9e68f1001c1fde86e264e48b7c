@@ -1,0 +1,16 @@
+package com.miniproj.sample;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+interface Vehicle{
+	boolean canDrive();
+}
+
+public interface Car extends Vehicle{
+	
+	@Autowired
+	Vehicle vehicle;
+
+	@Override
+	public boolean canDrive();
+}

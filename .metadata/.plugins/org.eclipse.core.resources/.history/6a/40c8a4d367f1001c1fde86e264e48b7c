@@ -1,0 +1,14 @@
+package com.miniproj.sample;
+
+public class Motorcycle implements Vehicle{
+
+	public boolean canFly() {
+		return false;
+	}
+
+	@Override
+	public boolean canDrive() {
+		return true;
+	}
+
+}

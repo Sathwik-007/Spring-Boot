@@ -1,0 +1,24 @@
+Validations in HTML:
+
+-> add spring-boot-starter-validation dependency
+-> use form scriplet uri provided by spring
+-> replace all form contents with form:<form-tag>
+-> create a new todo object with default values and make it available to ModelMap
+	 which can be later used
+	to map with new description and targetDate given by user when
+	creating a new todo. model.add("todo", new Todo(id, user, desc, ..))
+-> in the post method, instead of @RequestParam use Todo todo as it is 
+	available in the model frm the prev step. use todo.getter methods
+	for desired values
+-> add modelAttribute="todo" to the form
+-> provide a default constructor for todo class (refer errorfix.txt)
+
+
+JSR 349 validations:
+
+-> use @Size or any other validating annotations on the members in 
+	in Todo.java class
+-> use @Valid before Todo todo object to perform validation
+-> add BindingResult parameter to check for results
+-> use <errors cssClass="text-warning"> tag to show error messages 
+	on the webpage.

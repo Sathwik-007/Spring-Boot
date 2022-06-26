@@ -1,0 +1,7 @@
+<%@ include file="fragments/header.jspf"%>
+<%@ include file="fragments/navbar.jspf"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
+<!-- Need to list detials -->
+
+<%@ include file="fragments/footer.jspf"%>

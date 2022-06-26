@@ -1,0 +1,11 @@
+package com.miniproj.SpringBootRestAPI.jpa;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.repository.CrudRepository;
+
+import com.miniproj.SpringBootRestAPI.model.Student;
+
+@Configuration
+public interface StudentRepository extends CrudRepository<Student, String> {
+
+}

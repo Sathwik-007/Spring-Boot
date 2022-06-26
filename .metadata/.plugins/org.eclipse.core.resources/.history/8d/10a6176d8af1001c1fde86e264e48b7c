@@ -1,0 +1,36 @@
+<%@ include file="fragments/header.jspf"%>
+<%@ include file="fragments/navbar.jspf"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
+<!-- Need to list details -->
+<div class="container">
+
+	<table class="table table-striped">
+		<tr>
+			<th>Couse Id</th>
+			<th>Course Name</th>
+			<th>Description</th>
+			<th>Steps</th>
+			<th></th>
+			<th></th>
+		</tr>
+
+		<c:forEach items="${currStudent}" var="student">
+			<tr>
+				<td>${student.id}</td>
+				<td>${student.name}</td>
+				<td>${student.description}</td>
+				<td>${student.steps}</td>
+				<td><a href="/update-course?id=${student.id}"
+					class="btn btn-warning">Update</a></td>
+				<td><a href="/delete-course?id=${student.id}" type="button"
+					class="btn btn-danger">Delete</a></td>
+			</tr>
+		</c:forEach>
+
+	</table>
+	<a type="button" class="btn btn-success" href="/add-course">Add a
+		Course</a>
+</div>
+
+<%@ include file="fragments/footer.jspf"%>

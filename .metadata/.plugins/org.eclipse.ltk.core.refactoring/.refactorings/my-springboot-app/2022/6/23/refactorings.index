@@ -1,0 +1,6 @@
+1654099787860	Move 'login.jsp' to 'views'
+1654157531230	Move 'WEB-INF' to 'resources'
+1654157777643	Rename resource 'views'
+1654158918564	Move 'WEB-INF' to 'webapp'
+1654158925803	Delete element
+1654158961719	Rename resource 'jsp'

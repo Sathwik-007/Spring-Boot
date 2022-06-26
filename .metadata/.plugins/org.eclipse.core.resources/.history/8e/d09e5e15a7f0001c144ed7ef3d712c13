@@ -1,0 +1,11 @@
+package com.miniproj.SpringBootRestAPI.application.jpa;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+import com.miniproj.SpringBootRestAPI.model.Student;
+
+@RepositoryRestResource(path="questions", collectionResourceRel="questions")
+public interface StudentRepository extends CrudRepository<Student, String> {
+
+}

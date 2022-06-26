@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/5.1.3/css/bootstrap.min.css">
+<link
+	href="webjars/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"
+	rel="stylesheet">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Hello World! from jsp file view</h1>
+
+
+	<script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+	<script src="webjars/jquery/3.6.0/jquery.min.js"></script>
+	<script
+		src="webjars/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<script>
+		$('#targetDate').datepicker({
+			format : 'dd/mm/yyyy'
+		});
+	</script>
+</body>
+</html>

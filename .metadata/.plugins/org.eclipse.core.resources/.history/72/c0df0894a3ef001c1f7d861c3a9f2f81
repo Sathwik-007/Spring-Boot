@@ -1,0 +1,5 @@
+package com.sathwik.springboot.jpa;
+
+public class UserRepository {
+
+}

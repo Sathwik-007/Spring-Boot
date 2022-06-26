@@ -1,0 +1,6 @@
+package com.miniproj.sample;
+
+public interface Vehicle {
+	public boolean canDrive();
+	public boolean canFly();
+}

@@ -1,0 +1,22 @@
+<%@ include file="fragments/header.jspf"%>
+<%@ include file="fragments/navbar.jspf"%>
+<h1>Hello from jsp file view</h1>
+<h4>
+	Click to list details of each Student :
+
+	<table class="table table-striped">
+		<tr>
+			<th>Student ID</th>
+			<th></th>
+		</tr>
+		<c:forEach items="${allStudents}" var="student">
+			<tr>
+				<td>${student.name }</td>
+				<td><a href="/list-details?StudentId=${student.id}"
+					class="btn btn-warning">view</a></td>
+			</tr>
+		</c:forEach>
+	</table>
+</h4>
+
+<%@ include file="fragments/footer.jspf"%>

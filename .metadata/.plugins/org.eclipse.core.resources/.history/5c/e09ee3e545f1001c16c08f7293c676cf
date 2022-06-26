@@ -1,0 +1,8 @@
+<%@ include file="fragments/header.jspf"%>
+<%@ include file="fragments/navbar.jspf"%>
+<h1>Hello from jsp file view</h1>
+<h4>
+	Click to list details
+</h4>
+
+<%@ include file="fragments/footer.jspf"%>

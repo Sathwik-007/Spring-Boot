@@ -1,0 +1,9 @@
+error:
+
+There was an unexpected error (type=Bad Request, status=400).
+Validation failed for object='todo'. Error count: 2
+org.springframework.web.method.annotation.ModelAttributeMethodProcessor$1: org.springframework.validation.BeanPropertyBindingResult: 2 errors
+
+fix : 
+Add default constructor, check for spring form lib tags i.e form:form are all correct
+give modelAttribute instead of commandName in the form tag.

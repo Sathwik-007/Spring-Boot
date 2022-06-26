@@ -1,0 +1,10 @@
+package com.miniproj.sample;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class MainClass implements Vehicle {
+
+	@Autowired
+	Vehicle vehicle;
+
+}

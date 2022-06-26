@@ -1,0 +1,9 @@
+package com.miniproj.SpringBootRestAPI.application.jpa;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.miniproj.SpringBootRestAPI.model.Student;
+
+public interface StudentRepo extends JpaRepository<Student, String> {
+
+}

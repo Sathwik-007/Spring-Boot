@@ -1,0 +1,15 @@
+package com.miniproj.sample;
+
+public class Jeep implements Vehicle{
+
+	@Override
+	public boolean canDrive() {
+		return false;
+	}
+
+	@Override
+	public boolean canFly() {
+		return false;
+	}
+
+}

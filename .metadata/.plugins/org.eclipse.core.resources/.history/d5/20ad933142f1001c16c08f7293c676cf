@@ -1,0 +1,11 @@
+package com.miniproj.SpringBootRestAPI.application.jpa;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+import com.miniproj.SpringBootRestAPI.model.Course;
+
+@RepositoryRestResource(path="myCourse", collectionResourceRel="myCourse")
+public interface StudentRepo extends JpaRepository<Course, String> {
+	
+}

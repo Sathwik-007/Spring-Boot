@@ -1,0 +1,12 @@
+package com.miniproj.SpringBootRestAPI.application.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SpringRestContoller {
+	@RequestMapping("/welcome")
+	public String hello() {
+		return "welcome from controller";
+	}
+}
